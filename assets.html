@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turtle assets</title>
+    <link rel="stylesheet" href="assets.css" />
+  </head>
+  <body>
+    <section id="ast-banner">
+      <img src="turtleimages/logo.png" alt="/" class="logo" />
+      <div class="main">
+        <h2>Our Assets</h2>
+        <p>All In The Same Style</p>
+      </div>
+      <div class="main-btn">
+        <a href="#"><span></span>View Palletes</a
+        ><a href="#"><span></span>Privacy</a>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="#">Palletes</a></li>
+          <li><a href="#">License</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn">
+      <img src="turtleimages/menu.png" alt="" id="menu" />
+    </div>
+    <div class="assetarea">
+      <div class="assetcard">
+        <img src="turtleimages/webscene.png" alt="" />
+        <div class="assetabt">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            cupiditate?
+          </p>
+        </div>
+        <div class="download">
+          <a href="#"><span></span>Download</a>
+        </div>
+      </div>
+      <div class="assetdesc">
+        <p>
+          This asset pack contains 48x48, 64x64, 192x193, 256x256 files that are
+          in png file format. <br />It contains 50 files of various game assets
+          such as,<br />trees, rocks, grasses, mushroom, bottles, flowers, a
+          table, fruits
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    var menubtn = document.getElementById("menubtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+
+    menubtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        menu.src = "turtleimages/close.png";
+      } else {
+        sideNav.style.right = "-250px";
+        menu.src = "turtleimages/menu.png";
+      }
+    };
+  </script>
+</html>

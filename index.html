@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turtle</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="scriptsheet" href="script.js" />
+  </head>
+  <body>
+    <section id="banner">
+      <img src="turtleimages/logo.png" alt="" class="logo" />
+      <div class="banner-text">
+        <h1>Studio NJN</h1>
+        <p>Creating A Life You Adore.</p>
+        <div class="banner-btn">
+          <a href="assets.html"><span></span>View Assets</a>
+          <a href="#"><span></span>About Us</a>
+        </div>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="#">Palletes</a></li>
+          <li><a href="#">License</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn">
+      <img src="turtleimages/menu.png" alt="" id="menu" />
+    </div>
+  </body>
+  <script>
+    var menubtn = document.getElementById("menubtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+
+    menubtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        menu.src = "turtleimages/close.png";
+      } else {
+        sideNav.style.right = "-250px";
+        menu.src = "turtleimages/menu.png";
+      }
+    };
+  </script>
+</html>
